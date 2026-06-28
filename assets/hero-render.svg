@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="520" viewBox="0 0 700 520" fill="none">
+  <!-- Background dots pattern (world map feel) -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D4B0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00D4B0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="350" cy="260" r="300" fill="url(#glow)"/>
+
+  <!-- Scattered dots for world map -->
+  <g fill="#00D4B0" opacity="0.3">
+    <circle cx="150" cy="120" r="2"/><circle cx="180" cy="130" r="1.5"/>
+    <circle cx="200" cy="110" r="2"/><circle cx="230" cy="140" r="1.5"/>
+    <circle cx="260" cy="100" r="2"/><circle cx="290" cy="150" r="1.5"/>
+    <circle cx="320" cy="120" r="2"/><circle cx="350" cy="90" r="1.5"/>
+    <circle cx="380" cy="130" r="2"/><circle cx="410" cy="110" r="1.5"/>
+    <circle cx="440" cy="140" r="2"/><circle cx="470" cy="100" r="1.5"/>
+    <circle cx="500" cy="130" r="2"/><circle cx="530" cy="150" r="1.5"/>
+    <circle cx="200" cy="200" r="1.5"/><circle cx="300" cy="180" r="2"/>
+    <circle cx="400" cy="200" r="1.5"/><circle cx="500" cy="190" r="2"/>
+    <circle cx="250" cy="250" r="1.5"/><circle cx="450" cy="240" r="2"/>
+  </g>
+
+  <!-- Connection lines -->
+  <g stroke="#00D4B0" stroke-width="0.5" opacity="0.2">
+    <line x1="150" y1="120" x2="260" y2="100"/>
+    <line x1="260" y1="100" x2="380" y2="130"/>
+    <line x1="380" y1="130" x2="500" y2="130"/>
+    <line x1="300" y1="180" x2="400" y2="200"/>
+  </g>
+
+  <!-- Ship hull -->
+  <g transform="translate(80, 300)">
+    <path d="M0 60 L40 100 L300 100 L340 60 Z" fill="#1C2A30" stroke="#2A3A42" stroke-width="1"/>
+    <rect x="60" y="20" width="220" height="40" rx="2" fill="#131A1E" stroke="#2A3A42" stroke-width="1"/>
+    <!-- Containers on ship -->
+    <rect x="70" y="0" width="40" height="20" rx="1" fill="#00D4B0" opacity="0.8"/>
+    <rect x="115" y="0" width="40" height="20" rx="1" fill="#0F1518" stroke="#00D4B0" stroke-width="0.5"/>
+    <rect x="160" y="0" width="40" height="20" rx="1" fill="#00D4B0" opacity="0.6"/>
+    <rect x="205" y="0" width="40" height="20" rx="1" fill="#0F1518" stroke="#00D4B0" stroke-width="0.5"/>
+    <rect x="115" y="-22" width="40" height="20" rx="1" fill="#00D4B0" opacity="0.4"/>
+    <rect x="160" y="-22" width="40" height="20" rx="1" fill="#0F1518" stroke="#00D4B0" stroke-width="0.5"/>
+    <!-- Ship bridge -->
+    <rect x="240" y="-30" width="30" height="50" rx="2" fill="#1C2A30" stroke="#2A3A42" stroke-width="1"/>
+  </g>
+
+  <!-- Central logo -->
+  <g transform="translate(300, 180)">
+    <circle cx="50" cy="50" r="45" fill="none" stroke="#00D4B0" stroke-width="2.5" stroke-dasharray="220 60" opacity="0.8"/>
+    <rect x="43" y="30" width="6" height="22" rx="3" fill="#FFFFFF"/>
+    <circle cx="46" cy="24" r="4" fill="#FFFFFF"/>
+    <path d="M55 55 L68 42 M68 42 L68 52 M68 42 L58 42" stroke="#00D4B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Airplane -->
+  <g transform="translate(480, 80) rotate(15)">
+    <path d="M0 15 L60 10 L80 0 L60 10 L80 20 L60 10 L0 5 Z" fill="#2A3A42" stroke="#3A4A52" stroke-width="0.5"/>
+    <path d="M20 5 L35 -10 L40 10 Z" fill="#2A3A42" stroke="#3A4A52" stroke-width="0.5"/>
+  </g>
+
+  <!-- Truck -->
+  <g transform="translate(480, 320)">
+    <rect x="0" y="10" width="80" height="50" rx="3" fill="#1C2A30" stroke="#2A3A42" stroke-width="1"/>
+    <rect x="80" y="25" width="40" height="35" rx="3" fill="#131A1E" stroke="#2A3A42" stroke-width="1"/>
+    <rect x="85" y="30" width="20" height="15" rx="2" fill="#1C2A30" opacity="0.5"/>
+    <circle cx="25" cy="65" r="8" fill="#0F1518" stroke="#2A3A42" stroke-width="1.5"/>
+    <circle cx="60" cy="65" r="8" fill="#0F1518" stroke="#2A3A42" stroke-width="1.5"/>
+    <circle cx="105" cy="65" r="8" fill="#0F1518" stroke="#2A3A42" stroke-width="1.5"/>
+    <!-- IMPORTORIUM text on truck -->
+    <text x="15" y="40" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#00D4B0" letter-spacing="1">IMPORTORIUM</text>
+  </g>
+
+  <!-- Glow points -->
+  <g fill="#00D4B0">
+    <circle cx="150" cy="280" r="3" opacity="0.8"/>
+    <circle cx="500" cy="200" r="3" opacity="0.6"/>
+    <circle cx="350" cy="100" r="3" opacity="0.7"/>
+    <circle cx="600" cy="300" r="2" opacity="0.5"/>
+    <circle cx="250" cy="180" r="2" opacity="0.4"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="tealGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1BAA8C"/>
+      <stop offset="100%" stop-color="#38D9B0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Teal circular arc: starts upper-right, sweeps ~300° counter-clockwise -->
+  <path
+    d="M 136 42
+       A 65 65 0 1 0 148 115"
+    stroke="url(#tealGrad)"
+    stroke-width="12"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Arrow continuation from arc end curving up-right -->
+  <path
+    d="M 148 115
+       Q 158 90 168 60"
+    stroke="url(#tealGrad)"
+    stroke-width="12"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Arrowhead pointing up-right -->
+  <polygon points="168,60 152,62 158,76" fill="#38D9B0"/>
+  <polygon points="168,60 148,58 152,62" fill="#2ECBA7"/>
+  <polygon points="168,60 158,76 166,72" fill="#28B89A"/>
+
+  <!-- Letter "i" - body (3D isometric with two faces) -->
+  <!-- Left face (darker) -->
+  <polygon points="86,64 100,64 100,158 86,164" fill="#1C1C1C"/>
+  <!-- Right face (lighter dark) -->
+  <polygon points="100,64 116,58 116,152 100,158" fill="#333333"/>
+  <!-- Top edge highlight -->
+  <polygon points="86,64 100,64 116,58 102,58" fill="#3D3D3D"/>
+
+  <!-- Letter "i" - dot (3D isometric with two faces) -->
+  <!-- Left face (darker) -->
+  <polygon points="86,30 100,30 100,52 86,55" fill="#1C1C1C"/>
+  <!-- Right face (lighter dark) -->
+  <polygon points="100,30 116,24 116,46 100,52" fill="#333333"/>
+  <!-- Top edge highlight -->
+  <polygon points="86,30 100,30 116,24 102,24" fill="#3D3D3D"/>
+</svg>
