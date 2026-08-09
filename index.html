@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Importorium — El curso de importación #1 de habla hispana. Aprende a importar desde China y construir un negocio rentable.">
-  <title>Importorium | Aprende. Importa. Crea tu negocio.</title>
+  <meta name="description" content="Importorium — programa online para aprender a importar mercadería comercialmente desde China usando el Régimen de Courier Comercial." data-i18n-attr="content:meta.description.index">
+  <title data-i18n="meta.title.index">Importorium | Aprende a importar por Courier Comercial</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +13,11 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/navbar.css?v=2">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/features.css">
-  <link rel="stylesheet" href="css/social-proof.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/utilities.css">
 
   <link rel="icon" type="image/png" href="assets/logo.png">
@@ -26,24 +27,32 @@
   <!-- NAVBAR -->
   <header class="navbar" id="navbar">
     <div class="container navbar__inner">
-      <a href="#" class="navbar__logo">
+      <a href="#inicio" class="navbar__logo">
         <img src="assets/logo.png" alt="Importorium Logo" class="navbar__logo-img">
         <span class="navbar__logo-text">IMPORTORIUM</span>
       </a>
 
-      <nav class="navbar__nav" aria-label="Navegación principal">
+      <nav class="navbar__nav" aria-label="Navegación principal" data-i18n-attr="aria-label:common.nav_aria">
         <ul class="navbar__links">
-          <li><a href="#inicio" class="navbar__link navbar__link--active">Inicio</a></li>
-          <li><a href="#beneficios" class="navbar__link">Beneficios</a></li>
-          <li><a href="#testimonios" class="navbar__link">Testimonios</a></li>
-          <li><a href="#sobre-mi" class="navbar__link">Sobre nosotros</a></li>
-          <li><a href="#faq" class="navbar__link">FAQ</a></li>
+          <li><a href="#inicio" class="navbar__link navbar__link--active" data-i18n="common.nav.inicio">Inicio</a></li>
+          <li><a href="#servicios" class="navbar__link" data-i18n="common.nav.servicios">Servicios</a></li>
+          <li><a href="#programa" class="navbar__link" data-i18n="common.nav.programa">Programa</a></li>
+          <li><a href="#precios" class="navbar__link" data-i18n="common.nav.precios">Precios</a></li>
+          <li><a href="#sobre-nosotros" class="navbar__link" data-i18n="common.nav.sobre">Sobre nosotros</a></li>
+          <li><a href="#contacto" class="navbar__link" data-i18n="common.nav.contacto">Contacto</a></li>
         </ul>
       </nav>
 
-      <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="navbar__actions">
+        <div class="lang-switch" role="group" aria-label="Seleccionar idioma" data-i18n-attr="aria-label:common.lang_group_aria">
+          <span class="lang-switch__thumb" aria-hidden="true"></span>
+          <button type="button" class="lang-switch__btn" data-lang="es">ES</button>
+          <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false" data-i18n-attr="aria-label:common.hamburger_aria">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -56,23 +65,23 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
           </svg>
-          EL PROGRAMA DE IMPORTACIÓN #1 DE HABLA HISPANA
+          <span data-i18n="hero.badge">PROGRAMA ONLINE DE LOGÍSTICA INTERNACIONAL</span>
         </div>
 
         <h1 class="hero__headline">
-          Aprende. Importa.<br>
-          <span class="hero__headline--accent">Crea tu negocio.</span>
+          <span data-i18n="hero.h1_line1">Aprende. Importa.</span><br>
+          <span class="hero__headline--accent" data-i18n="hero.h1_line2">Crea tu negocio.</span>
         </h1>
 
-        <p class="hero__subheadline">
-          Importorium es el paso a paso para importar desde China y construir
-          un negocio rentable, incluso si estás empezando
-          <a href="#empezar" class="hero__link">desde cero.</a>
+        <p class="hero__subheadline" data-i18n="hero.subheadline">
+          Importorium es el paso a paso para importar mercadería desde China
+          de forma comercial usando el Régimen de Courier Comercial,
+          <a href="#programa" class="hero__link">incluso si estás empezando desde cero.</a>
         </p>
 
         <div class="hero__ctas">
-          <a href="https://wa.me/5491165445599?text=Hola%20Lean!%20Estoy%20interesado%20en%20aprender%20a%20importar" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
-            Quiero empezar ahora
+          <a href="https://wa.me/5491165445599?text=Hola!%20Estoy%20interesado%20en%20aprender%20a%20importar" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+            <span data-i18n="hero.cta_primary">Quiero empezar ahora</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -84,7 +93,7 @@
                 <path d="M10 8L16 12L10 16V8Z" fill="currentColor"/>
               </svg>
             </span>
-            Ver programa
+            <span data-i18n="hero.cta_secondary">Ver programa</span>
           </a>
         </div>
       </div>
@@ -93,6 +102,7 @@
         <img
           src="assets/hero-render.png"
           alt="Ilustración 3D de barco de carga, contenedores y avión con logo de Importorium"
+          data-i18n-attr="alt:hero.image_alt"
           class="hero__image"
           loading="eager"
           width="700"
@@ -114,8 +124,8 @@
             </svg>
           </div>
           <div class="features__text">
-            <h3 class="features__title">Paso a paso completo</h3>
-            <p class="features__desc">Desde encontrar tu producto hasta recibirlo en tu país.</p>
+            <h3 class="features__title" data-i18n="features.item1_title">Paso a paso completo</h3>
+            <p class="features__desc" data-i18n="features.item1_desc">Desde encontrar tu producto hasta recibirlo en tu país.</p>
           </div>
         </div>
 
@@ -127,8 +137,8 @@
             </svg>
           </div>
           <div class="features__text">
-            <h3 class="features__title">Proveedores verificados</h3>
-            <p class="features__desc">Accede a nuestra lista de proveedores confiables.</p>
+            <h3 class="features__title" data-i18n="features.item2_title">Proveedores verificados</h3>
+            <p class="features__desc" data-i18n="features.item2_desc">Accede a nuestra lista de proveedores confiables.</p>
           </div>
         </div>
 
@@ -140,8 +150,8 @@
             </svg>
           </div>
           <div class="features__text">
-            <h3 class="features__title">Ahorra tiempo y dinero</h3>
-            <p class="features__desc">Evita errores costosos y negocia como un experto.</p>
+            <h3 class="features__title" data-i18n="features.item3_title">Ahorra tiempo y dinero</h3>
+            <p class="features__desc" data-i18n="features.item3_desc">Evita errores costosos y negocia como un experto.</p>
           </div>
         </div>
 
@@ -154,8 +164,8 @@
             </svg>
           </div>
           <div class="features__text">
-            <h3 class="features__title">Escala tu negocio</h3>
-            <p class="features__desc">Aprende a construir una marca y vender más.</p>
+            <h3 class="features__title" data-i18n="features.item4_title">Escala tu negocio</h3>
+            <p class="features__desc" data-i18n="features.item4_desc">Aprende a construir una marca y vender más.</p>
           </div>
         </div>
 
@@ -163,71 +173,229 @@
     </div>
   </section>
 
-  <!-- SOCIAL PROOF BAR -->
-  <section class="social-proof">
-    <div class="container social-proof__inner">
-
-      <div class="social-proof__alumnos">
-        <div class="social-proof__avatars" aria-hidden="true">
-          <img src="assets/avatars/avatar-1.svg" alt="" class="social-proof__avatar">
-          <img src="assets/avatars/avatar-2.svg" alt="" class="social-proof__avatar">
-          <img src="assets/avatars/avatar-3.svg" alt="" class="social-proof__avatar">
-          <img src="assets/avatars/avatar-4.svg" alt="" class="social-proof__avatar">
-          <img src="assets/avatars/avatar-5.svg" alt="" class="social-proof__avatar">
-        </div>
-        <div class="social-proof__alumnos-text">
-          <span class="social-proof__count">+2.500 alumnos</span>
-          <span class="social-proof__tagline">Ya están importando y creciendo con Importorium.</span>
-        </div>
+  <!-- SERVICIOS / QUÉ INCLUYE -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow" data-i18n="servicios.eyebrow">Servicios</span>
+        <h2 class="section__title" data-i18n="servicios.title">Qué es Importorium y qué incluye</h2>
+        <p class="section__subtitle" data-i18n="servicios.subtitle">
+          Importorium es un programa online que enseña a personas en Argentina a importar
+          mercadería de forma comercial desde China, utilizando el Régimen de Courier
+          Comercial (régimen aduanero simplificado). Está pensado para cualquier persona
+          física que quiera empezar a importar comercialmente, sin experiencia previa
+          en comercio exterior.
+        </p>
       </div>
 
-      <div class="social-proof__ratings">
-
-        <div class="social-proof__platform">
-          <span class="social-proof__platform-name social-proof__platform-name--google">Google</span>
-          <div class="social-proof__stars" aria-label="4.9 de 5 estrellas">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span class="star">★</span><span class="star star--half">★</span>
+      <div class="servicios__grid">
+        <div class="servicios__list">
+          <div class="servicios__list-item" data-animate>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="servicios.item1"><strong>Acceso a la plataforma en Skool</strong> con las clases en video y texto de los tres módulos del programa.</span>
           </div>
-          <span class="social-proof__score">4.9/5</span>
+          <div class="servicios__list-item" data-animate>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="servicios.item2"><strong>Comunidad de alumnos</strong> dentro de Skool para resolver dudas y compartir avances.</span>
+          </div>
+          <div class="servicios__list-item" data-animate>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="servicios.item3"><strong>Clases en vivo</strong> dentro del tercer módulo del programa.</span>
+          </div>
+          <div class="servicios__list-item" data-animate>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="servicios.item4"><strong>Soporte</strong> por email y WhatsApp para consultas sobre el acceso y el contenido del programa.</span>
+          </div>
+          <div class="servicios__list-item" data-animate>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="servicios.item5">Contenido educativo e informativo general — no constituye asesoramiento legal, impositivo ni aduanero individual. Ver <a href="terminos-y-condiciones.html" class="hero__link">Términos y Condiciones</a>.</span>
+          </div>
         </div>
-
-        <div class="social-proof__divider" aria-hidden="true"></div>
-
-        <div class="social-proof__platform">
-          <div class="social-proof__platform-logo">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#FF4A1C" aria-hidden="true">
-              <path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C8.87 6.4 7.85 10.07 9.07 13.22C9.11 13.32 9.15 13.42 9.15 13.55C9.15 13.77 9 13.97 8.8 14.05C8.57 14.15 8.33 14.09 8.14 13.93C8.08 13.88 8.04 13.83 8 13.76C6.87 12.33 6.69 10.28 7.45 8.64C5.78 10 4.87 12.3 5 14.47C5.06 14.97 5.12 15.47 5.29 15.97C5.43 16.57 5.7 17.17 6 17.7C7.08 19.43 8.95 20.67 10.96 20.92C13.1 21.19 15.39 20.8 17.03 19.32C18.86 17.66 19.5 15 18.56 12.72L18.43 12.46C18.22 12 17.66 11.2 17.66 11.2Z"/>
-            </svg>
-            <span class="social-proof__platform-name">hotmart</span>
-          </div>
-          <div class="social-proof__stars" aria-label="4.8 de 5 estrellas">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span class="star">★</span><span class="star star--half">★</span>
-          </div>
-          <span class="social-proof__score">4.8/5</span>
-        </div>
-
-        <div class="social-proof__divider" aria-hidden="true"></div>
-
-        <div class="social-proof__platform">
-          <div class="social-proof__platform-logo">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#00B67A" aria-hidden="true">
-              <path d="M12 2L14.5 9H22L16 13.5L18.5 20.5L12 16L5.5 20.5L8 13.5L2 9H9.5L12 2Z"/>
-            </svg>
-            <span class="social-proof__platform-name">Trustpilot</span>
-          </div>
-          <div class="social-proof__stars" aria-label="4.9 de 5 estrellas">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span class="star">★</span><span class="star star--half">★</span>
-          </div>
-          <span class="social-proof__score">4.9/5</span>
-        </div>
-
       </div>
     </div>
   </section>
 
+  <!-- PROGRAMA / CURRÍCULA -->
+  <section class="section section--alt" id="programa">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow" data-i18n="programa.eyebrow">Programa</span>
+        <h2 class="section__title" data-i18n="programa.title">Cómo está organizado el programa</h2>
+        <p class="section__subtitle" data-i18n="programa.subtitle">
+          Importorium combina tres formas de acompañamiento durante el programa. Consultá también la
+          <a href="politica-acceso-entrega.html" class="hero__link">Política de Acceso y Entrega</a>
+          para más detalles.
+        </p>
+      </div>
+
+      <div class="programa__grid">
+        <div class="programa__card" data-animate>
+          <div class="programa__number">1</div>
+          <h3 class="programa__title" data-i18n="programa.card1_title">Acompañamiento 1 a 1 en WhatsApp</h3>
+          <p class="programa__desc" data-i18n="programa.card1_desc">Soporte directo por WhatsApp para resolver tus dudas durante todo el programa.</p>
+        </div>
+        <div class="programa__card" data-animate>
+          <div class="programa__number">2</div>
+          <h3 class="programa__title" data-i18n="programa.card2_title">Contenido en Vivo Pregrabado</h3>
+          <p class="programa__desc" data-i18n="programa.card2_desc">Clases grabadas en formato de clase en vivo, disponibles para ver a tu ritmo.</p>
+        </div>
+        <div class="programa__card" data-animate>
+          <div class="programa__number">3</div>
+          <h3 class="programa__title" data-i18n="programa.card3_title">Clases en Vivo – Q&A</h3>
+          <p class="programa__desc" data-i18n="programa.card3_desc">Sesiones en vivo para hacer preguntas puntuales y resolver dudas en el momento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section class="section" id="precios">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow" data-i18n="precios.eyebrow">Precios</span>
+        <h2 class="section__title" data-i18n="precios.title">Precio del programa</h2>
+        <p class="section__subtitle" data-i18n="precios.subtitle">Todos los precios están expresados en dólares estadounidenses (USD).</p>
+      </div>
+
+      <div class="precios__grid">
+        <div class="precios__card precios__card--promo" data-animate>
+          <span class="precios__badge" data-i18n="precios.promo_badge">Programa Básico</span>
+          <div class="precios__amount">USD 700</div>
+          <p class="precios__note" data-i18n="precios.promo_note">Precio promocional válido únicamente para los primeros 10 cupos. Una vez cubiertos, el precio pasa a ser el de Programa VIP.</p>
+        </div>
+        <div class="precios__card" data-animate>
+          <span class="precios__badge" data-i18n="precios.standard_badge">Programa VIP</span>
+          <div class="precios__amount">USD 900</div>
+          <p class="precios__note" data-i18n="precios.standard_note">Precio de acceso al programa una vez agotados los cupos promocionales. Pago en cuotas próximamente disponible.</p>
+        </div>
+        <p class="precios__disclaimer" data-i18n="precios.disclaimer">Antes de pagar vas a poder revisar la <a href="politica-reembolsos.html" class="hero__link">Política de Reembolsos</a> y los <a href="terminos-y-condiciones.html" class="hero__link">Términos y Condiciones</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="section section--alt" id="sobre-nosotros">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow" data-i18n="sobre.eyebrow">Sobre nosotros</span>
+        <h2 class="section__title" data-i18n="sobre.title">Quiénes están detrás de Importorium</h2>
+      </div>
+
+      <div class="sobre__grid">
+        <div class="sobre__card" data-animate>
+          <span class="sobre__name">Joaquin Giordano</span>
+          <span class="sobre__role" data-i18n="sobre.joao_role">Cofundador</span>
+          <p class="sobre__bio" data-i18n="sobre.joao_bio">Cofundador de Importorium, enfocado en simplificar el proceso de importación comercial vía courier para personas en Argentina.</p>
+        </div>
+        <div class="sobre__card" data-animate>
+          <span class="sobre__name">Leandro Carbone</span>
+          <span class="sobre__role" data-i18n="sobre.lean_role">Cofundador</span>
+          <p class="sobre__bio" data-i18n="sobre.lean_bio">Cofundador de Importorium, a cargo del acompañamiento a los alumnos durante el programa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow" data-i18n="contacto.eyebrow">Contacto</span>
+        <h2 class="section__title" data-i18n="contacto.title">Hablemos</h2>
+        <p class="section__subtitle" data-i18n="contacto.subtitle">Escribinos por el medio que prefieras, te respondemos dentro de nuestro horario de atención.</p>
+      </div>
+
+      <div class="contacto__grid">
+        <div class="contacto__card" data-animate>
+          <div class="contacto__icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="1.5"/><path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <span class="contacto__label" data-i18n="contacto.email_label">Email</span>
+          <span class="contacto__value"><a href="mailto:joacoimportorium@gmail.com">joacoimportorium@gmail.com</a></span>
+        </div>
+        <div class="contacto__card" data-animate>
+          <div class="contacto__icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.85 1h.01a7.94 7.94 0 0 0 5.54-13.58ZM12.06 18.4h-.01a6.57 6.57 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.44-.16-.25a6.6 6.6 0 1 1 12.24-3.5 6.55 6.55 0 0 1-6.64 6.6Z" fill="currentColor"/></svg>
+          </div>
+          <span class="contacto__label" data-i18n="contacto.whatsapp_label">WhatsApp</span>
+          <span class="contacto__value"><a href="https://wa.me/5491165445599" target="_blank" rel="noopener">+54 9 11 6544-5599</a></span>
+        </div>
+        <div class="contacto__card" data-animate>
+          <div class="contacto__icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15.5 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <span class="contacto__label" data-i18n="contacto.horario_label">Horario de atención</span>
+          <span class="contacto__value" data-i18n="contacto.horario_value">10:00 a 18:00 hs (Argentina)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#inicio" class="footer__logo">
+            <img src="assets/logo.png" alt="Importorium Logo" class="footer__logo-img">
+            <span class="footer__logo-text">IMPORTORIUM</span>
+          </a>
+          <p class="footer__tagline" data-i18n="common.footer.tagline">Programa online para aprender a importar mercadería comercialmente desde China usando el Régimen de Courier Comercial.</p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title" data-i18n="common.footer.contact_title">Contacto</h3>
+          <div class="footer__links">
+            <div class="footer__contact-item">
+              <span class="footer__contact-label" data-i18n="contacto.email_label">Email</span>
+              <a href="mailto:joacoimportorium@gmail.com" class="footer__link">joacoimportorium@gmail.com</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-label" data-i18n="contacto.whatsapp_label">WhatsApp</span>
+              <a href="https://wa.me/5491165445599" target="_blank" rel="noopener" class="footer__link">+54 9 11 6544-5599</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-label" data-i18n="contacto.horario_label">Horario de atención</span>
+              <span class="footer__link" data-i18n="common.footer.hours">10:00 a 18:00 hs (Argentina)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title" data-i18n="common.footer.nav_title">Navegación</h3>
+          <div class="footer__links">
+            <a href="#servicios" class="footer__link" data-i18n="common.nav.servicios">Servicios</a>
+            <a href="#programa" class="footer__link" data-i18n="common.nav.programa">Programa</a>
+            <a href="#precios" class="footer__link" data-i18n="common.nav.precios">Precios</a>
+            <a href="#sobre-nosotros" class="footer__link" data-i18n="common.nav.sobre">Sobre nosotros</a>
+            <a href="#contacto" class="footer__link" data-i18n="common.nav.contacto">Contacto</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title" data-i18n="common.footer.legal_title">Legal</h3>
+          <div class="footer__legal-info">
+            <span class="footer__legal-entity" data-i18n="common.footer.placeholder_razon">LJC LRA LLC</span>
+            <span class="footer__legal-meta" data-i18n="common.footer.legal_reg">N.º de registro: 42-2986505</span>
+            <span class="footer__legal-meta" data-i18n="common.footer.legal_dir">1057 NW 136th Ave, Miami, FL 33182, US</span>
+          </div>
+          <div class="footer__links">
+            <a href="politica-acceso-entrega.html" class="footer__link" data-i18n="common.footer.link_acceso">Acceso y Entrega</a>
+            <a href="politica-reembolsos.html" class="footer__link" data-i18n="common.footer.link_reembolsos">Reembolsos</a>
+            <a href="terminos-y-condiciones.html" class="footer__link" data-i18n="common.footer.link_terminos">Términos y Condiciones</a>
+            <a href="politica-privacidad.html" class="footer__link" data-i18n="common.footer.link_privacidad">Privacidad</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span data-i18n="common.footer.bottom_line">© 2026 LJC LRA LLC — Todos los derechos reservados</span>
+        <span data-i18n="common.footer.short_tagline">Aprende. Importa. Crea tu negocio.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

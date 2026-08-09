@@ -1,0 +1,302 @@
+/* Shared section scaffolding for Servicios, Programa, Precios, Sobre Nosotros, Contacto */
+
+.section {
+  padding-block: var(--space-24);
+  scroll-margin-top: 68px;
+}
+
+.section--alt {
+  background-color: var(--color-bg-card-alt);
+  border-block: 1px solid var(--color-border);
+}
+
+.section__header {
+  max-width: 640px;
+  margin-inline: auto;
+  margin-bottom: var(--space-12);
+  text-align: center;
+}
+
+.section__eyebrow {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-3);
+}
+
+.section__title {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-black);
+  letter-spacing: var(--ls-tight);
+  line-height: var(--lh-tight);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.section__subtitle {
+  font-size: var(--text-md);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+}
+
+/* Servicios */
+.servicios__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 720px;
+  margin-inline: auto;
+  gap: var(--space-10);
+  align-items: start;
+}
+
+.servicios__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+}
+
+.servicios__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+}
+
+.servicios__list-item svg {
+  flex-shrink: 0;
+  color: var(--color-accent);
+  margin-top: 3px;
+}
+
+.servicios__list-item strong {
+  color: var(--color-text-primary);
+  font-weight: var(--font-semibold);
+}
+
+/* Programa */
+.programa__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.programa__card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.programa__number {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-glow);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-bold);
+  font-size: var(--text-md);
+}
+
+.programa__title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+}
+
+.programa__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+}
+
+/* Precios */
+.precios__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.precios__card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.precios__card--promo {
+  border-color: var(--color-border-accent);
+  box-shadow: var(--shadow-accent);
+  position: relative;
+}
+
+.precios__badge {
+  align-self: flex-start;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--color-accent-glow);
+  color: var(--color-accent);
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}
+
+.precios__amount {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-black);
+  color: var(--color-text-primary);
+  letter-spacing: var(--ls-tight);
+}
+
+.precios__amount span {
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  color: var(--color-text-secondary);
+}
+
+.precios__note {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+}
+
+.precios__disclaimer {
+  grid-column: 1 / -1;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+/* Sobre nosotros */
+.sobre__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-10);
+}
+
+.sobre__card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sobre__name {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+}
+
+.sobre__role {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-accent);
+}
+
+.sobre__bio {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+  margin-top: var(--space-2);
+}
+
+.placeholder {
+  color: #E0A93B;
+  font-weight: var(--font-semibold);
+}
+
+/* Contacto */
+.contacto__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.contacto__card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  text-align: center;
+  align-items: center;
+}
+
+.contacto__icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+}
+
+.contacto__label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+}
+
+.contacto__value {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+}
+
+.contacto__value a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 212, 176, 0.4);
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 1024px) {
+  .servicios__grid { grid-template-columns: 1fr; }
+  .programa__grid { grid-template-columns: 1fr; }
+  .precios__grid { grid-template-columns: 1fr; }
+  .sobre__grid { grid-template-columns: 1fr; }
+  .contacto__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .section { padding-block: var(--space-16); }
+  .section__title { font-size: var(--text-2xl); }
+  .servicios__list,
+  .programa__card,
+  .precios__card,
+  .sobre__card,
+  .contacto__card {
+    padding: var(--space-6);
+  }
+}
