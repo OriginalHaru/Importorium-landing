@@ -42,6 +42,7 @@ const I18N = {
     'common.footer.bottom_line': '© 2026 LJC LRA LLC — Todos los derechos reservados',
     'common.footer.short_tagline': 'Aprende. Importa. Crea tu negocio.',
     'common.footer.back_home': 'Volver al inicio',
+    'common.whatsapp_float': 'Hablar por WhatsApp',
 
     'legal.back': 'Volver al inicio',
     'legal.eyebrow_legal': 'Legal',
@@ -84,6 +85,12 @@ const I18N = {
     'programa.card3_title': 'Clases en Vivo – Q&A',
     'programa.card3_desc': 'Sesiones en vivo para hacer preguntas puntuales y resolver dudas en el momento.',
 
+    'resenas.eyebrow': 'Testimonios',
+    'resenas.title': 'Alumnos que ya se animaron',
+    'resenas.pill': '+100 alumnos ya empezaron a importar',
+    'resenas.prev_aria': 'Video anterior',
+    'resenas.next_aria': 'Video siguiente',
+
     'precios.eyebrow': 'Precios',
     'precios.title': 'Precio del programa',
     'precios.subtitle': 'Todos los precios están expresados en dólares estadounidenses (USD).',
@@ -96,9 +103,9 @@ const I18N = {
     'sobre.eyebrow': 'Sobre nosotros',
     'sobre.title': 'Quiénes están detrás de Importorium',
     'sobre.joao_role': 'Cofundador',
-    'sobre.joao_bio': 'Cofundador de Importorium, con 2 años de experiencia en comercio exterior y más de 100 importaciones realizadas con éxito. Actualmente estudiando la Tecnicatura en Comercio Exterior.',
+    'sobre.joao_bio': 'Con 2 años de experiencia en comercio exterior y más de 100 importaciones realizadas con éxito. Actualmente estudiando la Tecnicatura en Comercio Exterior.',
     'sobre.lean_role': 'Cofundador',
-    'sobre.lean_bio': 'Cofundador de Importorium, con más de 10 años de experiencia en comercio internacional y 3 años importando mercadería.',
+    'sobre.lean_bio': 'Con más de 10 años de experiencia en comercio internacional y 3 años importando mercadería.',
     'contacto.eyebrow': 'Contacto',
     'contacto.title': 'Hablemos',
     'contacto.subtitle': 'Escribinos por el medio que prefieras, te respondemos dentro de nuestro horario de atención.',
@@ -208,6 +215,7 @@ const I18N = {
     'common.footer.bottom_line': '© 2026 LJC LRA LLC — All rights reserved',
     'common.footer.short_tagline': 'Learn. Import. Build your business.',
     'common.footer.back_home': 'Back to home',
+    'common.whatsapp_float': 'Chat on WhatsApp',
 
     'legal.back': 'Back to home',
     'legal.eyebrow_legal': 'Legal',
@@ -250,6 +258,12 @@ const I18N = {
     'programa.card3_title': 'Live Classes – Q&A',
     'programa.card3_desc': 'Live sessions to ask specific questions and get answers on the spot.',
 
+    'resenas.eyebrow': 'Testimonials',
+    'resenas.title': 'Students who already took the leap',
+    'resenas.pill': '+100 students have already started importing',
+    'resenas.prev_aria': 'Previous video',
+    'resenas.next_aria': 'Next video',
+
     'precios.eyebrow': 'Pricing',
     'precios.title': 'Program price',
     'precios.subtitle': 'All prices are shown in US dollars (USD).',
@@ -262,9 +276,9 @@ const I18N = {
     'sobre.eyebrow': 'About us',
     'sobre.title': 'Who’s behind Importorium',
     'sobre.joao_role': 'Co-founder',
-    'sobre.joao_bio': 'Co-founder of Importorium, with 2 years of experience in foreign trade and more than 100 successful imports completed. Currently studying for a degree in Foreign Trade.',
+    'sobre.joao_bio': 'With 2 years of experience in foreign trade and more than 100 successful imports completed. Currently studying for a degree in Foreign Trade.',
     'sobre.lean_role': 'Co-founder',
-    'sobre.lean_bio': 'Co-founder of Importorium, with more than 10 years of experience in international trade and 3 years importing goods.',
+    'sobre.lean_bio': 'With more than 10 years of experience in international trade and 3 years importing goods.',
 
     'contacto.eyebrow': 'Contact',
     'contacto.title': 'Let’s talk',
