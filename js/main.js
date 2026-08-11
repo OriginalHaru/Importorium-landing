@@ -51,18 +51,27 @@ const setActiveLink = (id) => {
   });
 };
 
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      setActiveLink(entry.target.id);
+const updateActiveLinkOnScroll = () => {
+  const scrollPos = window.scrollY + navbar.offsetHeight + 10;
+  let currentId = sectionEls[0]?.id;
+
+  sectionEls.forEach(section => {
+    if (section.offsetTop <= scrollPos) {
+      currentId = section.id;
     }
   });
-}, {
-  threshold: 0,
-  rootMargin: `-${navbar.offsetHeight + 1}px 0px -60% 0px`
-});
 
-sectionEls.forEach(section => sectionObserver.observe(section));
+  const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+  if (atBottom) {
+    currentId = sectionEls[sectionEls.length - 1]?.id;
+  }
+
+  if (currentId) setActiveLink(currentId);
+};
+
+window.addEventListener('scroll', updateActiveLinkOnScroll, { passive: true });
+window.addEventListener('resize', updateActiveLinkOnScroll);
+updateActiveLinkOnScroll();
 
 const observerOptions = {
   threshold: 0.15,
