@@ -98,7 +98,7 @@ const I18N = {
     'sobre.joao_role': 'Cofundador',
     'sobre.joao_bio': 'Cofundador de Importorium, con 2 años de experiencia en comercio exterior y más de 100 importaciones realizadas con éxito. Actualmente estudiando la Tecnicatura en Comercio Exterior.',
     'sobre.lean_role': 'Cofundador',
-    'sobre.lean_bio': 'Cofundador de Importorium, a cargo del acompañamiento a los alumnos durante el programa.',
+    'sobre.lean_bio': 'Cofundador de Importorium, con más de 10 años de experiencia en comercio internacional y 3 años importando mercadería.',
     'contacto.eyebrow': 'Contacto',
     'contacto.title': 'Hablemos',
     'contacto.subtitle': 'Escribinos por el medio que prefieras, te respondemos dentro de nuestro horario de atención.',
@@ -264,7 +264,7 @@ const I18N = {
     'sobre.joao_role': 'Co-founder',
     'sobre.joao_bio': 'Co-founder of Importorium, with 2 years of experience in foreign trade and more than 100 successful imports completed. Currently studying for a degree in Foreign Trade.',
     'sobre.lean_role': 'Co-founder',
-    'sobre.lean_bio': 'Co-founder of Importorium, in charge of supporting students throughout the program.',
+    'sobre.lean_bio': 'Co-founder of Importorium, with more than 10 years of experience in international trade and 3 years importing goods.',
 
     'contacto.eyebrow': 'Contact',
     'contacto.title': 'Let’s talk',
