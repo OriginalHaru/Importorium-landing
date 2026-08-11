@@ -40,6 +40,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+const navLinkEls = Array.from(document.querySelectorAll('.navbar__link'));
+const sectionEls = navLinkEls
+  .map(link => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+
+const setActiveLink = (id) => {
+  navLinkEls.forEach(link => {
+    link.classList.toggle('navbar__link--active', link.getAttribute('href') === `#${id}`);
+  });
+};
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      setActiveLink(entry.target.id);
+    }
+  });
+}, {
+  threshold: 0,
+  rootMargin: `-${navbar.offsetHeight + 1}px 0px -60% 0px`
+});
+
+sectionEls.forEach(section => sectionObserver.observe(section));
+
 const observerOptions = {
   threshold: 0.15,
   rootMargin: '0px 0px -40px 0px'
