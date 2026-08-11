@@ -36,6 +36,14 @@
   margin-bottom: var(--space-4);
 }
 
+.section__header--sub {
+  margin-top: var(--space-20);
+}
+
+.section__title--sm {
+  font-size: var(--text-2xl);
+}
+
 .section__subtitle {
   font-size: var(--text-md);
   color: var(--color-text-secondary);

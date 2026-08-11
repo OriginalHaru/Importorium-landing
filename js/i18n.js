@@ -17,7 +17,6 @@ const I18N = {
     'privacidad.h1': 'Política de Privacidad',
 
     'common.nav.inicio': 'Inicio',
-    'common.nav.servicios': 'Servicios',
     'common.nav.programa': 'Programa',
     'common.nav.testimonios': 'Testimonios',
     'common.nav.precios': 'Precios',
@@ -191,7 +190,6 @@ const I18N = {
     'privacidad.h1': 'Privacy Policy',
 
     'common.nav.inicio': 'Home',
-    'common.nav.servicios': 'Services',
     'common.nav.programa': 'Program',
     'common.nav.testimonios': 'Testimonials',
     'common.nav.precios': 'Pricing',
