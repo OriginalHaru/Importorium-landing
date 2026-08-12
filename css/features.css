@@ -1,6 +1,6 @@
 .features {
   background-color: transparent;
-  padding-block: var(--space-4) 0;
+  padding-block: var(--space-4) var(--space-12);
 }
 
 .features__grid {
