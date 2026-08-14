@@ -79,7 +79,8 @@
     linear-gradient(160deg, var(--color-bg-card-alt), var(--color-bg-base));
 }
 
-.aq-video {
+.aq-video,
+.aq-photo {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -90,6 +91,10 @@
 
 .aq-card {
   cursor: pointer;
+}
+
+.aq-card--photo {
+  cursor: default;
 }
 
 .aq-play {
